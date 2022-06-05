@@ -1,0 +1,38 @@
+*{
+    margin: 0px; 
+    box-sizing: border-box;    
+}
+
+body{
+    background: rgb(224, 224, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 1px -13px 30px black;
+    padding: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+div > .title-text{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.article{
+    width: 90%;
+    background: white;
+    box-shadow: 9px 8px 20px 0px #afafaf;
+    text-align: justify;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+}
