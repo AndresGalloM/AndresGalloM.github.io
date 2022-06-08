@@ -27,7 +27,7 @@ div > .title-text{
     font-size: 22px;
 }
 
-.article{
+article .article{
     width: 90%;
     background: white;
     box-shadow: 9px 8px 20px 0px #afafaf;
@@ -35,4 +35,56 @@ div > .title-text{
     border-radius: 5px;
     padding: 30px;
     margin: 20px auto;
+}
+
+section .modal{
+    position: absolute;
+    background: white;
+    box-shadow: 9px 2px 20px 0px #afafaf;
+    width: 60%;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal .icon{
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.modal .icon .red, .green, .yellow{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.modal .icon .red{
+    background: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-70%);
+    z-index: 1;
+}
+
+.modal .icon .green{
+    background: rgb(0, 175, 0);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    z-index: 3;
+}
+
+.modal .icon .yellow{
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-35%, -55%);
+    z-index: 2;;
 }
