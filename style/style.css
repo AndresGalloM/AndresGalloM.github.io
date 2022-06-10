@@ -5,7 +5,7 @@
 
 body{
     background: rgb(224, 224, 224);
-    font-family: sans-serif;
+    font-family: 'Glory', sans-serif;;
 }
 
 main nav{
@@ -91,18 +91,77 @@ article .article{
 } */
 
 .modal{
-    width: 350px;
-    height: 550px;
+    width: 320px;
+    height: 480px;
     background: #1d1d1d;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 
-.modal .container p{
+.modal .info{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    color: white;
+}
+
+.modal .info .nombre{
+    font-size: 29px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgb(181, 181, 181);
+    padding-bottom: 7px;
+}
+
+.modal .info .profesion{
+    font-size: 17px;
+    color: #afafaf;
+    text-shadow: 0px 0px 10px rgb(181, 181, 181);
+}
+
+.modal .info .info-personal{
+    padding: 40px 0px 0px 0px;
+    font-size: 14px;
+}
+
+.modal .info .info-personal div{
+    display: flex;
+    align-items: center;
+    color: #afafaf;
+    text-shadow: 0px 0px 10px rgb(181, 181, 181);
+    margin: 3px 0px;
+    gap: 3px;
+}
+
+.info-personal div > p{
+    color: #afafaf;
+    text-shadow: 0px 0px 10px rgb(181, 181, 181);
+}
+
+.info-personal div .icono{
+    width: 20px;
+}
+
+.info-personal div > i{
+    color: #41c85a;
+    text-shadow: 0px 0px 20px #62c975;
+}
+
+img{
+    position: absolute;
+    right: 30px;
+    top: 95px;
+    height: 220px;
+}
+
+.modal .container > p{
     position: relative;
     top: 100px;
     color: white;
@@ -131,4 +190,38 @@ article .article{
     height: 60px;
     background: white;
     filter: blur(70px);
+}
+
+article .redes{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    font-size: 23px;
+    color: white;
+}
+
+article .redes i{
+    padding: 0px 5px;
+    color: #41c85a;
+    text-shadow: 0px 0px 20px #62c975;
+}
+
+article .redes i:last-child{
+    padding: 0px 0px 0px 5px;
+}
+
+article .redes p{
+    font-size: 13px;
+    text-shadow: 0px 0px 10px white;
+    text-align: right;
+    padding-bottom: 15px;
+}
+
+.modal .close{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    color:  #41c85a;
+    /* color: white; */
+    font-size: 25px;
 }

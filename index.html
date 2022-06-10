@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="image/asd.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/ce7cd523c1.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap" rel="stylesheet">
+
     <title>Prueba git</title>
 </head>
 <body>
@@ -15,7 +20,7 @@
             <div class="title">
                 <p class="title-text">GitHub</p>
             </div>
-            <ul><i class="fa-brands fa-accusoft"></i><i class="fa-solid fa-archway"></i>
+            <ul>
                 <li>Home</li>
                 <li>About us</li>
                 <li>Contact</li>
@@ -65,11 +70,51 @@
         </section>
 
         <section class="modal">
-            <div class="container">
+            <article class="container-padre">
+                <div class="close">
+                    <i class="fas fa-times"></i>
+                </div>
                 <div class="foco1"></div>
                 <div class="foco2"></div>
-                <!-- <p>Andres Felipe Gallo Marin</p>  -->
-            </div>
+
+                <article class="info">
+                    <p class="nombre">Andres Gallo</p>
+                    <p class="profesion">Software Developer</p>
+                    <div class="info-personal">
+                        <div class="pais">
+                            <div class="icono">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p>Medellin - Colombia</p>
+                        </div>
+                        <div class="contacto">
+                            <div class="icono">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <p>3132331873</p>
+                        </div>
+                        <div class="email">
+                            <div class="icono">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <p>felipeg101@gmail.com</p>
+                        </div>
+                    </div>
+                </article>
+
+                <img src="image/people.svg" alt="">
+
+                <article class="container">    
+                    <!-- <p>Andres Felipe Gallo Marin</p>  -->
+                    <div class="redes">
+                        <p>Redes Sociales</p>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </article>
+            </article>
         </section>
     </main>
 </body>
